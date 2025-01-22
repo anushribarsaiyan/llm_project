@@ -33,8 +33,8 @@ This project provides a RESTful API built using **Django** that processes input 
      
     POST /process
     Description: Accepts a JSON payload containing text (the input text) and task (the type of processing task). The API processes the text according to the specified task and     returns the processed result.
-
-     ***Request Payload**
+   
+   Request Payload
         {
             "text": "Your input text here",
             "task": "summarization"  # or "sentiment"
@@ -48,7 +48,7 @@ This project provides a RESTful API built using **Django** that processes input 
    
     GET /history
     Description: Retrieves all processed results from the in-memory storage.
-    ### Request Payload
+    Request Payload
         [
             {
                 "input_text": "Text 1",
