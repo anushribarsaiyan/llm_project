@@ -32,19 +32,20 @@ This project provides a RESTful API built using **Django** that processes input 
       ```bash
      
     POST /process
-       Description: Accepts a JSON payload containing text (the input text) and task (the type of processing task). The API processes the text according to the            specified task andreturns the processed result.
+       Description: Accepts a JSON payload containing text (the input text) and task (the type of processing task). 
+       The API processes the text according to thespecified task andreturns the processed result.
    
-   Request Payload
-        {
-            "text": "Your input text here",
-            "task": "summarization"  # or "sentiment"
-        }
-        Response (Summarization Example):
-        {
-            "input_text": "Your input text here",
-            "result": "Summarized text here",
-            "task": "summarization"
-        }
+      Request Payload
+           {
+               "text": "Your input text here",
+               "task": "summarization"  # or "sentiment"
+           }
+           Response (Summarization Example):
+           {
+               "input_text": "Your input text here",
+               "result": "Summarized text here",
+               "task": "summarization"
+           }
    
     GET /history
     Description: Retrieves all processed results from the in-memory storage.
