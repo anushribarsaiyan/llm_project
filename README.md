@@ -31,26 +31,20 @@ This project provides a RESTful API built using **Django** that processes input 
      
     POST /process
  
-    Description: Accepts a JSON payload containing text (the input text) and task (the type of processing task). The API processes the text according to the specified task and returns the processed result.
+    Description: Accepts a JSON payload containing text (the input text) and task (the type of processing task). The API processes the text according to the specified task and     returns the processed result.
 
     Request Payload
-
     {
         "text": "Your input text here",
         "task": "summarization"  # or "sentiment"
     }
-
     Response (Summarization Example):
-
     {
         "input_text": "Your input text here",
         "result": "Summarized text here",
         "task": "summarization"
     }
-
-
     GET /history
-
     Description: Retrieves all processed results from the in-memory storage.
         [
             {
@@ -65,24 +59,16 @@ This project provides a RESTful API built using **Django** that processes input 
                 "task": "sentiment"
             }
         ]   
-
-
     DELETE /clear_history
-
     Description: Clears all processed results from the database.
-
     {
         "message": "All history cleared."
     }
-
     GET /supported_tasks
 
     Description: Lists the tasks that can be processed by the API
-
     {
-
-        "supported_tasks": ["summarization", "sentiment"]
+    "supported_tasks": ["summarization", "sentiment"]
 
     }
-    
     ```
