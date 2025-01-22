@@ -6,7 +6,9 @@ This project provides a RESTful API built using **Django** that processes input 
 ## Features:
 1. **POST /process**: Accepts a JSON payload containing a `text` field and a `task` field (either 'summarization' or 'sentiment') and returns the processed result.
 2. **GET /history**: Retrieves all previously processed results stored in-memory.
-
+3. **DELETE /clear_history** : Clears all processed results from the database.
+4. **GET /Supported_tasks** : Lists the tasks that can be processed by the API
+   
 ## Requirements:
 - Python 3.7+
 - Install the required Python packages by running:
@@ -22,30 +24,31 @@ This project provides a RESTful API built using **Django** that processes input 
    cd llm_project
 ```
 
-2. Install the dependencies:
+### 2. Install the dependencies:
      ```bash
      pip install -r requirements.txt
     ```
-3. API Documentation:
+3. ###   API Documentation::
       ```bash
      
     POST /process
     Description: Accepts a JSON payload containing text (the input text) and task (the type of processing task). The API processes the text according to the specified task and     returns the processed result.
 
-    Request Payload
-    {
-        "text": "Your input text here",
-        "task": "summarization"  # or "sentiment"
-    }
-    Response (Summarization Example):
-    {
-        "input_text": "Your input text here",
-        "result": "Summarized text here",
-        "task": "summarization"
-    }
+     ***Request Payload**
+        {
+            "text": "Your input text here",
+            "task": "summarization"  # or "sentiment"
+        }
+        Response (Summarization Example):
+        {
+            "input_text": "Your input text here",
+            "result": "Summarized text here",
+            "task": "summarization"
+        }
    
     GET /history
     Description: Retrieves all processed results from the in-memory storage.
+    ### Request Payload
         [
             {
                 "input_text": "Text 1",
