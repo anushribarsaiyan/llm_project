@@ -18,8 +18,8 @@ This project provides a RESTful API built using **Django** that processes input 
 
 ### 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/text-processing-api.git
-   cd text-processing-api
+  https://github.com/anushribarsaiyan/llm_project.git
+   cd llm_project
 ```
 
 2. Install the dependencies:
