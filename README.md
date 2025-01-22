@@ -32,7 +32,7 @@ This project provides a RESTful API built using **Django** that processes input 
       ```bash
      
     POST /process
-    Description: Accepts a JSON payload containing text (the input text) and task (the type of processing task). The API processes the text according to the specified task and     returns the processed result.
+       Description: Accepts a JSON payload containing text (the input text) and task (the type of processing task). The API processes the text according to the            specified task andreturns the processed result.
    
    Request Payload
         {
