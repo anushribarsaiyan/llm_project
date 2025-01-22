@@ -14,4 +14,4 @@ This project provides a RESTful API built using Django and the Django Rest Frame
 ### 1. Clone the repository:
 ```bash
 git clone https://github.com/your-username/my_project.git
-cd my_project
+
