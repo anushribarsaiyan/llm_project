@@ -28,7 +28,7 @@ This project provides a RESTful API built using **Django** that processes input 
      ```bash
      pip install -r requirements.txt
     ```
- ### 2. API Documentation::
+ ### 3. API Documentation::
       ```bash
      
     POST /process
