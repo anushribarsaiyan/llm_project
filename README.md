@@ -15,3 +15,41 @@ This project provides a RESTful API built using Django and the Django Rest Frame
 ```bash
 git clone https://github.com/your-username/my_project.git
 
+### API Documentation:
+Description: Accepts a JSON payload containing text (the input text) and task (the type of processing task). The API processes the text according to the specified task and returns the processed result.
+
+```bash {
+  "input_text": "Your input text here",
+  "result": "Summarized text here",
+  "task": "summarization",
+  "created_at": "2025-01-22T12:34:56Z"
+}
+
+GET /history
+
+[
+  {
+    "input_text": "Your input text here",
+    "result": "Summarized text here",
+    "task": "summarization",
+    "created_at": "2025-01-22T12:34:56Z"
+  },
+  // Other processed results
+]
+
+DELETE /clear_history
+This endpoint clears all processed results from the database and returns a confirmation message:
+{
+  "message": "History cleared successfully"
+}
+
+
+Requirements
+Python 3.8+
+Django 4.x
+Django Rest Framework
+Hugging Face transformers library
+PostgreSQL (or any other database of your choice)
+
+
+
