@@ -65,7 +65,6 @@ This project provides a RESTful API built using **Django** that processes input 
         "message": "All history cleared."
     }
     GET /supported_tasks
-
     Description: Lists the tasks that can be processed by the API
     {
     "supported_tasks": ["summarization", "sentiment"]
